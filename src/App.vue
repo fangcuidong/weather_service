@@ -64,7 +64,7 @@ export default {
       // 弹窗可见性
       dialogVisible: false,
       // 问候语
-      title: "早上好！",
+      title: "",
       // 问候弹窗天气与对应显示图片关系字典
       weatherImgDict: {
         晴: require("./assets/晴.png"),
@@ -157,7 +157,7 @@ export default {
       this.title = "下午好！";
     } else if (hour < 19) {
       this.title = "傍晚好！";
-    } else if (hour < 22) {
+    } else if (hour < 24) {
       this.title = "晚上好！";
     }
 
@@ -275,7 +275,7 @@ export default {
   display: flex;
 }
 .content > img {
-  height: 100%;
+  width: 200px;
 }
 .content > div {
   margin-left: 15px;
