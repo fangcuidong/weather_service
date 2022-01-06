@@ -3,7 +3,7 @@ import NProgress from 'nprogress';
 import 'nprogress/nprogress.css';
 
 // 设置请求头和请求路径
-axios.defaults.baseURL = '/';
+axios.defaults.baseURL = process.env.VUE_APP_BASE_URL;
 axios.defaults.timeout = 10000;
 
 const http = {
